@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ficha de Anamnese</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" minlength="1" maxlength="10" placeholder="Primeiro nome" required >
+                <label for="isobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" id="isobrenome" minlength="1" maxlength="10" placeholder="Sobrenome" required>
+            </p>
+            <p>
+                <label for="idata">Data de Nascimento</label>
+                <input type="date" name="data" id="idata" required>
+            </p>
+            <p>
+                <label for="iemail">Email</label>
+                <input type="email" name="email" id="iemail" placeholder="nome@operadora.com" required>
+            </p>
+            
+            <fieldset>
+                <legend>Sexo</legend>
+                <p>
+                    <label for="isexo">Masculino</label>
+                    <input type="radio" name="isexo" id="imasc">
+                </p>
+                <p>
+                    <label for="isexo">Feminino</label>
+                    <input type="radio" name="isexo" id="ifem">
+                </p>
+            </fieldset>
+                <p>
+                    <label for="iidade">Idade</label>
+                    <input type="number" name="idade" id="iidade" placeholder="ex:17" step="1">
+                </p>
+                <p>
+                    <label for="ialtura">Altura</label>
+                    <input type="number" name="altura" id="ialtura" placeholder="centímetros" step="Altura">
+                </p>
+                <p>
+                    <label for="iprof">Profissão</label>
+                    <input type="text" name="profissao" id="iprof" placeholder="Engenheiro" minlength="5" maxlength="20">
+                </p>
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                    
+                </p>
+
+
+        </fieldset>
+                    
+
+    </form>
+</body>
+</html>
